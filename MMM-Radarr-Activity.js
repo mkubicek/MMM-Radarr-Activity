@@ -193,7 +193,7 @@ Module.register("MMM-Radarr-Activity", {
 
     buildApiUrl: function(){
         return this.config.radarrProtocol + "://" + this.config.radarrHost + ':' + this.config.radarrPort 
-        + '/api/history?apikey=' + this.config.radarrAPIKey + '&pageSize=' + this.config.perPage;
+        + '/api/v3/history?apikey=' + this.config.radarrAPIKey + '&pageSize=' + this.config.perPage;
     },
 
 
@@ -267,7 +267,7 @@ Module.register("MMM-Radarr-Activity", {
 
     getMoviePoster: function(movieId){
         return this.config.radarrProtocol + "://" + this.config.radarrHost + ':' + this.config.radarrPort 
-            + '/api/MediaCover/' + movieId + '/poster-250.jpg?apikey=' + this.config.radarrAPIKey;
+            + '/api/v3/MediaCover/' + movieId + '/poster-250.jpg?apikey=' + this.config.radarrAPIKey;
     },
 
     // Override dom generator.

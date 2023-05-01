@@ -193,7 +193,7 @@ Module.register("MMM-Radarr-Activity", {
 
     buildApiUrl: function(){
         return this.config.radarrProtocol + "://" + this.config.radarrHost + ':' + this.config.radarrPort 
-        + '/api/v3/history?apikey=' + this.config.radarrAPIKey + '&pageSize=' + this.config.perPage;
+        + '/api/v3/history?apikey=' + this.config.radarrAPIKey + '&includeMovie=true' + '&pageSize=' + this.config.perPage;
     },
 
 

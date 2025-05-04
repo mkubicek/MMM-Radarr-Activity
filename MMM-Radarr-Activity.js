@@ -243,7 +243,7 @@ Module.register("MMM-Radarr-Activity", {
             movieYear       : record.movie.year,
             movieDescription: record.movie.overview,
             moviePoster     : this.getMoviePoster( record.movie.id ),
-            movieRating     : record.movie.ratings.imdb.value,
+            movieRating     : record.movie.ratings.imdb ? record.movie.ratings.imdb.value : 'N/A',
             movieRuntime    : this.formatMovieRuntime(record.movie.runtime),
             id              : record.id,
             type            : record.eventType

@@ -11,7 +11,8 @@
     "url": "https://github.com/s-cotton/MMM-Radarr-Activity"
   },
   "keywords": [
-    "MagicMirror", "Radarr"
+    "MagicMirror",
+    "Radarr"
   ],
   "author": "Stephen Cotton",
   "license": "MIT",
